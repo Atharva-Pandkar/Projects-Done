@@ -1,0 +1,34 @@
+Total number of Modules required for automation of duplicate file remover is 3
+	
+	
+
+MODUlE 1 :- Ats.py
+ Functions 
+	  1: DEF hashfile(path)
+	     USE := To generate unique checksum for a file
+	     path = "The Path of The file to find Hash value"
+	     return = Unique CheckSum for path 
+	    
+MODULE 2 :- Mail_Attacher.py
+	  1: DEF is_connected()	    
+	     USE := To check if system is connected to the internet
+	     return = "Boolean value "
+	  2: DEF Attach(path,mail)
+	     USE := checks if system is connected to the net and call         			    Mail_sender(path,mail)
+	     path = "The path of the file to be attached to mail"  
+	     mail = "Email id to send the mail on "
+	     return " NULL
+	  3: DEF MailSender(path,mail)
+	     USE := Attaches the file and sends the mail
+	     path = "The path of the file to be attached to mail"  
+	     mail = "Email id to send the mail on "
+	     return = NULL 
+	   
+MODULE 3 :- Duplicate_Remover.py
+           1: DEF main()
+              USE := Entry point for the program
+              return = NULL
+           2: DEF DuplicateRemoval(path)
+              USE := Delete all duplicate files in the path specified 
+              path = "The path where duplicate files are to be checked"
+              return = NULL   	        
